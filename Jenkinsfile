@@ -1,10 +1,6 @@
 pipeline {
   agent any
 
-environment {
-        PYTHON = 'C:\\Users\\STUDENT\\AppData\\Local\\Programs\\Python\\Python313\\python.exe'
-    }
-  
   stages {
 
     stage('Checkout') {
@@ -16,7 +12,7 @@ environment {
     stage('Build') {
       steps {
         echo 'Checking Python application'
-        bat '"C:\\Users\\STUDENT\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m py_compile app.py'
+        bat 'python -m py_compile app.py'
       }
     }
 
