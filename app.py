@@ -20,7 +20,7 @@ class TestCalculator(unittest.TestCase):
     self.assertEqual(subtract(20, 10), 10)
     
   def test_add(self):
-    self.assertEqual(multiply(16, 14), 24)
+    self.assertEqual(multiply(6, 4), 24)
 
 # Main Application
 if __name__ == "__main__":
